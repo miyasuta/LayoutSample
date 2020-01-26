@@ -1,0 +1,37 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.Train_20_LayoutSample.controller.Master"
+	xmlns:f="sap.f"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<f:DynamicPage id="dynamicPage">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="Layout Samples"/>
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+		
+		<f:content>
+			<Table id="table" inset="false"
+				items="{
+					path: 'sampleData>/Layouts'
+				}"
+				class="sapFDynamicPageAlighnContent" width="auto">
+				<columns>
+					<Column>
+						<Text text="Layout"/>
+					</Column>
+				</columns>
+				
+				<items>
+					<ColumnListItem type="Navigation" press="onListItemPress">
+						<cells>
+							<Text text="{sampleData>name}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</f:content>
+		
+	</f:DynamicPage>
+</mvc:View>

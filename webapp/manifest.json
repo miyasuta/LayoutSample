@@ -1,0 +1,159 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "demo.Train_20_LayoutSample",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "demo.Train_20_LayoutSample.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "demo.Train_20_LayoutSample.i18n.i18n"
+				}
+			},
+			"sampleData": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/sampleData.json"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "demo.Train_20_LayoutSample.view",
+				"controlAggregation": "beginColumnPages",
+				"controlId": "flexibleColumnLayout",
+				"transition": "slide"
+			},
+			"routes": [
+				{
+					"name": "Home",
+					"pattern": "",
+					"target": [
+						"Master",
+						"InitialPage"
+					]
+				},
+				{
+					"name": "DynamicPage",
+					"pattern": "DynamicPage/{layout}",
+					"target": [
+						"Master",
+						"DynamicPage"
+					]
+				},
+				{
+					"name": "SemanticPage",
+					"pattern": "SemanticPage/{layout}",
+					"target": [
+						"Master",
+						"SemanticPage"
+					]
+				},
+				{
+					"name": "ObjectPage",
+					"pattern": "ObjectPage/{layout}",
+					"target": [
+						"Master",
+						"ObjectPage"
+					]
+				}
+			],
+			"targets": {
+				"Home": {
+					"viewType": "XML",
+					"viewName": "Home"
+				},
+				"Master": {
+					"viewType": "XML",
+					"viewName": "Master",
+					"controlAggregation": "beginColumnPages",
+					"viewLevel": 1
+				},
+				"DynamicPage": {
+					"viewType": "XML",
+					"viewName": "DynamicPage",
+					"controlAggregation": "midColumnPages",
+					"clearControlAggregation": true,
+					"viewLevel": 2
+				},
+				"SemanticPage": {
+					"viewType": "XML",
+					"viewName": "SemanticPage",
+					"controlAggregation": "midColumnPages",
+					"clearControlAggregation": true,
+					"viewLevel": 2
+				},
+				"ObjectPage": {
+					"viewType": "XML",
+					"viewName": "ObjectPage",
+					"controlAggregation": "midColumnPages",
+					"clearControlAggregation": true,
+					"viewLevel": 2
+				},
+				"InitialPage": {
+					"viewType": "XML",
+					"viewName": "InitialPage",
+					"controlAggregation": "midColumnPages",
+					"clearControlAggregation": true,
+					"viewLevel": 2
+				}
+			}
+		}
+	}
+}

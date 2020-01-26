@@ -1,0 +1,14 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+	xmlns:l="sap.ui.layout"
+	controllerName="demo.Train_20_LayoutSample.controller.Home"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Home">
+		<content>
+			<l:VerticalLayout class="sapUiContentPadding">
+				<Button text="Dynamic Page" press="onShowDynamic"/>
+				<Button text="Semantic Page" press="onShowSemantic"/>
+				<Button text="Object Page" press="onShowObject"/>					
+			</l:VerticalLayout>
+		</content>
+	</Page>
+</mvc:View>

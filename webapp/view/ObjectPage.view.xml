@@ -1,0 +1,60 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:uxap="sap.uxap"
+	controllerName="demo.Train_20_LayoutSample.controller.ObjectPage" xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<uxap:ObjectPageLayout id="objectPage" showFooter="true">
+		<uxap:headerTitle>
+			<uxap:ObjectPageDynamicHeaderTitle>
+				<uxap:heading>
+					<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Heading" type="XML" />
+				</uxap:heading>
+				<uxap:content>
+					<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.TitleContent" type="XML" />
+				</uxap:content>
+				<uxap:actions>
+					<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Actions" type="XML" />
+				</uxap:actions>
+				<uxap:breadcrumbs>
+					<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Breadcrumbs" type="XML" />
+				</uxap:breadcrumbs>
+				<uxap:navigationActions>
+					<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.NavigationActions" type="XML" />
+				</uxap:navigationActions>				
+			</uxap:ObjectPageDynamicHeaderTitle>
+			
+		</uxap:headerTitle>
+		
+		<uxap:headerContent>
+			<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.HeaderContent" type="XML" />
+		</uxap:headerContent>
+		
+		<uxap:sections>
+			<uxap:ObjectPageSection title="Product">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="">
+						<uxap:blocks>
+							<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Product" type="XML" />
+						</uxap:blocks>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+			
+			<uxap:ObjectPageSection title="Customer">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="">
+						<uxap:blocks>
+							<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Customer" type="XML" />
+						</uxap:blocks>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>			
+		</uxap:sections>
+		
+		<uxap:footer>
+			<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.FooterActions" type="XML" />
+		</uxap:footer>
+		
+	</uxap:ObjectPageLayout>
+
+</mvc:View>

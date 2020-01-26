@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	
+	<Breadcrumbs>
+		<links>
+			<Link text="page1"/>
+			<Link text="page2"/>
+			<Link text="page3"/>			
+		</links>
+	</Breadcrumbs>
+</core:FragmentDefinition>
+

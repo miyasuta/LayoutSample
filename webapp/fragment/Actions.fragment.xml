@@ -1,0 +1,11 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	
+	<Button text="Edit" type="Emphasized"/>
+	<Button text="Toggle Footer" press="onToggleFooter" />
+	<Button text="Delete"/>
+	<Button text="Copy"/>
+	
+</core:FragmentDefinition>
+

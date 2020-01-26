@@ -1,0 +1,6 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="demo.Train_20_LayoutSample.controller.InitialPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<MessagePage showHeader="false" text="Select a layout from table" description="" icon="sap-icon://cursor-arrow"/>
+	
+</mvc:View>

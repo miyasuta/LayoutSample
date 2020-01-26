@@ -1,0 +1,37 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+
+	<f:SimpleForm
+		editable="false"
+		layout="ResponsiveGridLayout"
+		labelSpanXL="3"
+		labelSpanL="3"
+		labelSpanM="3"
+		labelSpanS="12"
+		adjustLabelSpan="false"
+		emptySpanXL="4"
+		emptySpanL="4"
+		emptySpanM="4"
+		emptySpanS="0"
+		columnsXL="1"
+		columnsL="1"
+		columnsM="1"
+		singleContainerFullSize="false" >
+		<f:content>
+			<core:Title text="Product" />
+			<Label text="Product ID"/>
+			<Text text="{sampleData>/Product/ProductID}"/>
+			<Label text="Product Name"/>
+			<Text text="{sampleData>/Product/ProductName}"/>
+			<Label text="Quantity Per Unit"/>
+			<Text text="{sampleData>/Product/QuantityPerUnit}"/>
+			<Label text="Unit Price"/>
+			<Text text="{sampleData>/Product/UnitPrice}"/>		
+			<Label text="Stock"/>
+			<Text text="{sampleData>/Product/UnitsInStock}"/>
+		</f:content>
+	</f:SimpleForm>		
+
+</core:FragmentDefinition>

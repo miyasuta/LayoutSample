@@ -1,0 +1,9 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<VBox>
+		<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Product" type="XML" />
+		<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Customer" type="XML" />
+	</VBox>
+</core:FragmentDefinition>

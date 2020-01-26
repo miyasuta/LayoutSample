@@ -1,0 +1,52 @@
+{
+	"Layouts": [
+		{
+			"name": "DynamicPage"	
+		},
+		{
+			"name": "SemanticPage"	
+		},
+		{
+			"name": "ObjectPage"	
+		}		
+	],
+	
+	"Customer": {
+		"CustomerID": "BOTTM",
+		"CompanyName": "Bottom-Dollar Markets",
+		"ContactName": "Elizabeth Lincoln",
+		"ContactTitle": "Accounting Manager",
+		"Address": "23 Tsawassen Blvd.",
+		"City": "Tsawassen",
+		"Region": "BC",
+		"PostalCode": "T2F 8M4",
+		"Country": "Canada",
+		"Phone": "(604) 555-4729",
+		"Fax": "(604) 555-3745"
+	},
+	"Product": {
+		"ProductID": 1,
+		"ProductName": "Chai",
+		"SupplierID": 2,
+		"CategoryID": 1,
+		"QuantityPerUnit": "10 boxes x 20 bags",
+		"UnitPrice": "18.0000",
+		"UnitsInStock": 39,
+		"UnitsOnOrder": 0,
+		"ReorderLevel": 10,
+		"Discontinued": false	
+	},
+	"Supplier": {
+		"SupplierID": 2,
+		"CompanyName": "New Orleans Cajun Delights",
+		"ContactName": "Shelley Burke",
+		"ContactTitle": "Order Administrator",
+		"Address": "P.O. Box 78934",
+		"City": "New Orleans",
+		"Region": "LA",
+		"PostalCode": "70117",
+		"Country": "USA",
+		"Phone": "(100) 555-4822"		
+	}
+
+}

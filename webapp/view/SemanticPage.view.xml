@@ -1,0 +1,75 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:semantic="sap.f.semantic"
+	controllerName="demo.Train_20_LayoutSample.controller.SemanticPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<semantic:SemanticPage id="semanticPage" headerPinnable="true" showFooter="true">
+		<semantic:titleHeading>
+			<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Heading" type="XML" />
+		</semantic:titleHeading>
+		
+		<semantic:titleContent>
+			<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.TitleContent" type="XML" />
+		</semantic:titleContent>
+		
+		<semantic:headerContent>
+			<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.HeaderContent" type="XML" />
+		</semantic:headerContent>
+		
+		<semantic:content>
+			<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.MainContent" type="XML" />
+		</semantic:content>
+
+		<semantic:titleBreadcrumbs>
+			<core:Fragment fragmentName="demo.Train_20_LayoutSample.fragment.Breadcrumbs" type="XML" />
+		</semantic:titleBreadcrumbs>
+		
+		<!--Header actions-->
+		<semantic:titleMainAction>
+			<semantic:TitleMainAction text="Edit"/>
+		</semantic:titleMainAction>
+		
+		<semantic:titleCustomTextActions>
+			<Button text="Toggle Footer" press="onToggleFooter" />
+		</semantic:titleCustomTextActions>
+
+		<semantic:copyAction>
+			<semantic:CopyAction />
+		</semantic:copyAction>
+		
+		<semantic:deleteAction>
+			<semantic:DeleteAction />
+		</semantic:deleteAction>
+		
+		<!--Navigation actions-->
+		<semantic:fullScreenAction>
+			<semantic:FullScreenAction press="onFullScreen" visible="{= ${/actionButtonsInfo/midColumn/fullScreen} !== null }"/>
+		</semantic:fullScreenAction>
+
+		<semantic:exitFullScreenAction>
+			<semantic:ExitFullScreenAction press="onExitFullScreen" visible="{= ${/actionButtonsInfo/midColumn/exitFullScreen} !== null }" />
+		</semantic:exitFullScreenAction>
+		
+		<semantic:closeAction>
+			<semantic:CloseAction press="onClose" visible="{= ${/actionButtonsInfo/midColumn/closeColumn} !== null }" />
+		</semantic:closeAction>		
+		
+		<!--Footer actions-->
+		<semantic:messagesIndicator>
+			<semantic:MessagesIndicator press="onMessagesButtonPress"/>
+		</semantic:messagesIndicator>
+		
+		<semantic:positiveAction>
+			<semantic:PositiveAction />
+		</semantic:positiveAction>
+		
+		<semantic:negativeAction>
+			<semantic:NegativeAction />
+		</semantic:negativeAction>		
+		
+		<semantic:footerCustomActions>
+		</semantic:footerCustomActions>
+		
+	</semantic:SemanticPage>
+	
+</mvc:View>
